@@ -1,0 +1,12 @@
+{
+  "name": "clicked",
+  "displayName": "clicked",
+  "expo": {
+    "name": "clicked",
+    "slug": "clicked",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
