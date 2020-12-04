@@ -1,17 +1,24 @@
 import { StatusBar } from 'expo-status-bar';
-import React, { useEffect } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { StyleSheet, View } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import { green } from './common/Colors';
+import { deviceWidth } from './common/Dimensions';
+import Router from './src/navigation/Router';
+import Home from './src/screens/Home';
+import Login from './src/screens/Login';
 
 export default function App() {
+  const [token, setToken] = useState();
+
   useEffect(() => {
     SplashScreen.hide();
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      {/* {token ? <Home /> : <Login setToken={setToken} />} */}
+      <Router />
       <StatusBar
         style='auto'
         backgroundColor={green}
