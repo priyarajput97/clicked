@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { white } from '../common/Colors';
 
-const Home = () => {
+const Feeds = () => {
   return (
     <View
       style={{
@@ -12,9 +12,9 @@ const Home = () => {
         justifyContent: 'center',
       }}
     >
-      <Text>Home page</Text>
+      <Text>Feeds page</Text>
     </View>
   );
 };
 
-export default Home;
+export default Feeds;

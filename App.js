@@ -2,8 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
-import { green } from './common/Colors';
-import { deviceWidth } from './common/Dimensions';
+import { green } from './src/common/Colors';
 import Router from './src/navigation/Router';
 import Home from './src/screens/Home';
 import Login from './src/screens/Login';
@@ -31,7 +30,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },

@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Drawer, Text } from 'react-native-paper';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import { green, white } from '../../common/Colors';
+import { green, white } from '../common/Colors';
 
 const DrawerContent = (props) => {
   return (

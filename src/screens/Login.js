@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image, Button, StyleSheet } from 'react-native';
-import { green } from '../../common/Colors';
-import { deviceWidth } from '../../common/Dimensions';
+import { green } from '../common/Colors';
+import { deviceWidth } from '../common/Dimensions';
 import textLogo from '../assets/textLogo.png';
 
 const Login = ({ setToken }) => {

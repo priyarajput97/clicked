@@ -4,14 +4,18 @@ import { NavigationContainer } from '@react-navigation/native';
 import { StatusBar } from 'expo-status-bar';
 import MyDrawer from './MyDrawer';
 import Constants from 'expo-constants';
-import { green, white } from '../../common/Colors';
-import { deviceWidth } from '../../common/Dimensions';
+import { green, white } from '../common/Colors';
+import { deviceWidth } from '../common/Dimensions';
+import MyTabs from './MyTabs';
+import Header from '../components/Header';
 
 function Router() {
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        <MyDrawer />
+        {/* <MyDrawer /> */}
+        <Header />
+        <MyTabs />
       </NavigationContainer>
       <StatusBar style='light' backgroundColor={green} />
     </View>

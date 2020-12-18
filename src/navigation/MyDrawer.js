@@ -5,7 +5,7 @@ import DrawerContent from './DrawerContent';
 import { createStackNavigator } from '@react-navigation/stack';
 import Entypo from 'react-native-vector-icons/Entypo';
 import { TouchableRipple } from 'react-native-paper';
-import { green, white } from '../../common/Colors';
+import { green, white } from '../common/Colors';
 
 const Drawer = createDrawerNavigator();
 
