@@ -4,7 +4,6 @@ import { StyleSheet, View } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import { green } from './src/common/Colors';
 import Router from './src/navigation/Router';
-import Home from './src/screens/Home';
 import Login from './src/screens/Login';
 
 export default function App() {
@@ -16,8 +15,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      {/* {token ? <Home /> : <Login setToken={setToken} />} */}
-      <Router />
+      {token ? <Router /> : <Login setToken={setToken} />}
       <StatusBar
         style='auto'
         backgroundColor={green}
