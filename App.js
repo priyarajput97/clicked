@@ -4,7 +4,7 @@ import { StyleSheet, View } from 'react-native';
 import SplashScreen from 'react-native-splash-screen';
 import { green } from './src/common/Colors';
 import Router from './src/navigation/Router';
-import Login from './src/screens/Login';
+import AuthRouter from './src/navigation/AuthRouter';
 
 export default function App() {
   const [token, setToken] = useState();
@@ -15,7 +15,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      {token ? <Router /> : <Login setToken={setToken} />}
+      {token ? <Router /> : <AuthRouter setToken={setToken} />}
       <StatusBar
         style='auto'
         backgroundColor={green}

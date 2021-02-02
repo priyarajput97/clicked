@@ -11,7 +11,7 @@ import {
 import { green, lightGreen } from '../common/Colors';
 import { deviceWidth } from '../common/Dimensions';
 
-const Login = ({ navigation }) => {
+const Register = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <TextInput style={styles.textInput} placeholder='Enter your email' />
@@ -20,12 +20,17 @@ const Login = ({ navigation }) => {
         placeholder='Enter your password'
         secureTextEntry={true}
       />
-      <Button title='Login' color={green} />
+      <TextInput
+        style={styles.textInput}
+        placeholder='Confirm your password'
+        secureTextEntry={true}
+      />
+      <Button title='Register' color={green} />
 
       <View style={{ flexDirection: 'row', marginTop: 100 }}>
-        <Text style={{ fontSize: 15 }}>New to Clicked?</Text>
-        <TouchableOpacity onPress={() => navigation.navigate('Register')}>
-          <Text style={styles.registerLink}>Register Now!</Text>
+        <Text style={{ fontSize: 15 }}>Already a user?</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+          <Text style={styles.registerLink}>Login</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -53,4 +58,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Login;
+export default Register;
